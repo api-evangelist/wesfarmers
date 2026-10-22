@@ -1,23 +1,92 @@
 aid: wesfarmers
+
 name: Wesfarmers
-description: 'Wesfarmers is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Wesfarmers is an Australian diversified conglomerate. Its businesses include Bunnings (home improvement and outdoor living), Kmart Group (general merchandise and apparel), Officeworks (office and technology products), Wesfarmers Health (health, beauty and wellbeing products and wholesale pharmacy distribution), Wesfarmers Chemicals, Energy and Fertilisers, and industrial and safety product distribution, along with a data and digital ecosystem. It has not published a public developer portal or public API documentation on wesfarmers.com.au. (Surfaced via the API Evangelist harvest backlog, source: australia-apidays-2026.)'
+
 url: https://raw.githubusercontent.com/api-evangelist/wesfarmers/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Retail
+- Conglomerate
+- Australia
+- Home Improvement
+- Health
+- Chemicals
+- ASX Listed
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.wesfarmers.com.au/ResourcePackages/Wesfarmers/assets/dist/img/favicon.ico
+
 common:
+- type: WellKnown
+  url: well-known/wesfarmers-well-known.yml
+- type: Hosts
+  url: hosts/wesfarmers-hosts.yml
+- type: Documentation
+  url: https://www.wesfarmers.com.au/docs/default-source/reports/2026-annual-report.pdf
+- type: DomainSecurity
+  url: security/wesfarmers-domain-security.yml
 - type: Website
-  url: https://wesfarmers.com.au/
+  url: https://www.wesfarmers.com.au/
+- type: About
+  url: https://www.wesfarmers.com.au/who-we-are/who-we-are
+- type: Blog
+  url: https://www.wesfarmers.com.au/util/news-media/latest-news
+- type: Support
+  url: https://www.wesfarmers.com.au/util/contact
+- type: TermsOfService
+  url: https://www.wesfarmers.com.au/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.wesfarmers.com.au/security-privacy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/wesfarmers
+- type: Twitter
+  url: https://twitter.com/wesfarmers
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website www.wesfarmers.com.au answered 200 with title "Home - Wesfarmers" and names its businesses; no developer portal, API docs or pricing pages linked from the site. GitHub org github.com/wesfarmers exists but is unverified with 0 public repos, so not recorded.
+  evidence:
+  - url: https://www.wesfarmers.com.au/
+    status: 200
+  - url: https://www.wesfarmers.com.au/terms-of-use
+    status: 200
+  - url: https://www.wesfarmers.com.au/security-privacy
+    status: 200
+  - url: https://www.wesfarmers.com.au/util/contact
+    status: 200
+  - url: https://www.wesfarmers.com.au/util/news-media/latest-news
+    status: 200
+  - url: https://www.wesfarmers.com.au/who-we-are/who-we-are
+    status: 200
+  - url: https://www.linkedin.com/company/wesfarmers
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

@@ -1,0 +1,87 @@
+generated: '2026-10-22'
+method: searched
+probe: true
+source: https://www.wesfarmers.com.au/security-privacy
+scope: >-
+  Wesfarmers Limited corporate website (wesfarmers.com.au) Privacy Policy, Accessibility and Terms of use pages.
+  Wesfarmers is a conglomerate; its operating businesses (Bunnings, Kmart, Officeworks, OnePass etc.) publish their
+  own policies, which are not covered here. No developer/API-specific terms were found.
+signals:
+  data_subject_request:
+    url: https://www.wesfarmers.com.au/security-privacy
+    section: 'Accessing and correcting your personal information, and complaints and questions'
+    channel: privacy@wesfarmers.com.au
+    rights_named: [access, correction, complaint]
+    evidence:
+    - source: https://www.wesfarmers.com.au/security-privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        You can request access to your personal information held by us, or request that it be corrected, by
+        contacting us at the address below.
+    - source: https://www.wesfarmers.com.au/security-privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        A fee will not be charged for an access request, but you may be charged the reasonable expenses we incur
+        (such as search and copying costs). If we refuse to provide you with access or correct the personal
+        information held about you by us (in accordance with the Privacy Act), then we will provide reasons for
+        such refusal.
+    note: >-
+      Australian Privacy Act access and correction rights with a stated refusal-reasons commitment. No deletion or
+      portability right and no response deadline is stated.
+  data_residency:
+    url: https://www.wesfarmers.com.au/security-privacy
+    evidence:
+    - source: https://www.wesfarmers.com.au/security-privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        We may use cloud computing solutions or data storage located overseas in which case information may be
+        stored, under our control, on computer servers located outside of Australia (predominantly located in the
+        United States of America).
+    - source: https://www.wesfarmers.com.au/security-privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        The third parties to whom we disclose personal information may be located in Australia and other countries
+        including New Zealand, United Kingdom and United States of America.
+    note: >-
+      A disclosure that data may leave Australia (mainly to the US), and which countries recipients may be in.
+      It is not a commitment to keep data in any region.
+  subprocessors:
+    url: https://www.wesfarmers.com.au/security-privacy
+    evidence:
+    - source: https://www.wesfarmers.com.au/security-privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Our service providers and professional advisors including IT service providers, auditors, legal advisors,
+        mail houses and to share registrar and share plan management services
+    - source: https://www.wesfarmers.com.au/security-privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        We take steps to ensure that our service providers are obliged to protect the privacy and security of
+        personal information and use it only for the purpose for which it is disclosed.
+    note: >-
+      Lists categories of service providers and a flow-down obligation. No named subprocessor list and no change
+      notification.
+  accessibility_conformance:
+    url: https://www.wesfarmers.com.au/accessibility
+    section: Standards Compliance
+    standard: WCAG 2.0
+    evidence:
+    - source: https://www.wesfarmers.com.au/accessibility
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'This website meets W3C Web Content Accessibility Guidelines (WCAG) 2.0:'
+    - source: https://www.wesfarmers.com.au/accessibility
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        We are continually testing and modifying Wesfarmers.com.au for accessibility but there may be some legacy
+        pages and/or pages developed by third-parties that are not fully compliant with our accessibility standards.
+    note: >-
+      A self-declared claim to meet WCAG 2.0 with no conformance level (A/AA) stated, qualified by an admission that
+      legacy and third-party pages may not comply. It covers the corporate website only.

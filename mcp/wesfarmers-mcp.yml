@@ -1,0 +1,17 @@
+type: MCPServer
+name: Wesfarmers MCP server
+generated: '2026-10-22'
+method: none
+status: none
+description: No official Wesfarmers MCP server was found, and no candidate tool list could be derived because Wesfarmers publishes no OpenAPI contract or public API documentation.
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []
+evidence:
+- url: https://www.wesfarmers.com.au/.well-known/mcp.json
+  status: 200
+  note: Catch-all HTML page (31,863 bytes, same body as any unknown path), not an MCP document.
+- search: Wesfarmers MCP server OR developer API
+  result: no Wesfarmers MCP server or developer API found

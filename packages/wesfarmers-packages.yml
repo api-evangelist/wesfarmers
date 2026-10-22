@@ -1,0 +1,10 @@
+name: Wesfarmers packages
+generated: '2026-10-22'
+method: none
+source: https://www.wesfarmers.com.au/
+note: Checked npm search (text=wesfarmers, 0 results), PyPI (pypi.org/pypi/wesfarmers/json 404) and the GitHub org github.com/wesfarmers (0 public repos). Wesfarmers publishes no developer portal or SDKs; no first-party client libraries found.
+checked:
+- https://registry.npmjs.org/-/v1/search?text=wesfarmers&size=5
+- https://pypi.org/pypi/wesfarmers/json
+- https://api.github.com/orgs/wesfarmers
+packages: []
